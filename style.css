@@ -26,9 +26,8 @@ body:before {
   width: 70%;
   margin: 0 auto;
   border-radius: 24px;
-  background: #f6f5f0;
   padding: 2%;
-  box-shadow: 0px 10px 6px -8px rgba(0, 0, 0, 0.75);
+  color: #fff;
 }
 .board {
   column-count: 3;
@@ -46,7 +45,7 @@ body:before {
   border-radius: 6px;
 }
 .submitBtn {
-  height: 24px;
+  height: 25px;
   margin-bottom: 1px;
   background-color: #32b336;
   color: #fff;
@@ -62,19 +61,18 @@ img#flag {
 }
 .card {
   width: 84%;
-  background: #ccc;
   padding: 8%;
   margin-bottom: 20px;
   border-radius: 6px;
   color: #fff;
 }
 .card:hover {
-  -ms-transform: scale(1.01, 1.01);
-  -webkit-transform: scale(1.01, 1.01);
-  transform: scale(1.01, 1.01);
+  -ms-transform: scale(1.01, 1.001);
+  -webkit-transform: scale(1.01, 1.001);
+  transform: scale(1.01, 1.001);
   -webkit-box-shadow: 1px 1px 1px 0px;
   -moz-box-shadow: 1px 1px 1px 0px;
-  box-shadow: 1px 1px 1px 0px;
+  box-shadow: 1px 1px 1px 0px #65dff6;
   cursor: pointer;
 }
 .card.a {
@@ -107,6 +105,11 @@ img#flag {
 .card i {
   font-size: 3rem;
 }
+@media screen and (max-width: 980px) {
+  .card span {
+    font-size: 1.4rem;
+  }
+}
 @media screen and (max-width: 768px) {
   .board {
     column-count: 2;
@@ -116,6 +119,9 @@ img#flag {
   }
 }
 @media screen and (max-width: 500px) {
+  body {
+    height: auto;
+  }
   .board {
     column-count: 1;
   }
